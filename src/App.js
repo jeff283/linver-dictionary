@@ -17,7 +17,9 @@ function App() {
         const data = await axios.get(
           `https://linver-proxy.herokuapp.com/${category}/${word}`
         );
+
         setMeanings(data.data);
+
       } catch (error) {
         console.log(error);
       }

@@ -17,7 +17,7 @@ const Definitions = ({word, meanings, category,LightTheme}) => {
 
             {word==="" ? (<span className="subTitle">Start by typing a word in Search</span>
             ):(
-                meanings.map( (mean) => (
+                meanings.map &&  meanings.map( (mean) => (
                     mean.meanings.map((item) => (
                         item.definitions.map((def) => (
                             <div key={def.definition} className="singleMean" style={{backgroundColor: LightTheme ? "#3b5360" : "white", color: LightTheme ? "white" : "black"}}>
